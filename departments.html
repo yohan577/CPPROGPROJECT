@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Management | HRMS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-layout">
+        <aside class="sidebar">
+            <h2>DEPARTMENT</h2>
+            <nav>
+                <a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a>
+                <a href="employees.html"><i class="fas fa-users"></i> Employees</a>
+                <a href="departments.html" class="active"><i class="fas fa-building"></i> Departments</a>
+                <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </nav>
+        </aside>
+        <main class="content">
+            <header>
+                <h1>Department Management</h1>
+                <button id="addDepartmentBtn" class="primary-btn"><i class="fas fa-plus"></i> Add Department</button>
+            </header>
+
+            <div class="table-container">
+                <table id="departmentsTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Department Name</th>
+                            <th>Total Employees</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="departmentsTableBody">
+                        </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <div id="departmentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="deptModalTitle">Add New Department</h2>
+            <form id="departmentForm">
+                <input type="hidden" id="departmentId">
+
+                <div class="form-group">
+                    <label for="departmentName">Department Name</label>
+                    <input type="text" id="departmentName" required>
+                </div>
+                
+                <button type="submit" class="primary-btn">Save Department</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
