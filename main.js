@@ -9,7 +9,8 @@ const initData = () => {
         { id: 2, firstName: "Angelo", lastName: "Coronel", email: "coronel@corp.com", department: "Finance", position: "Accountant", hireDate: "2024-05-20", status: "Active", salary: 50000 },
         { id: 3, firstName: "Justine", lastName: "Dumo", email: "Dumo@corp.com", department: "Human Resources", position: "HR Specialist", hireDate: "2021-09-01", status: "Inactive", salary: 45000 },
         { id: 4, firstName: "Jerwin", lastName: "Valenzuela", email: "Valenzuela@corp.com", department: "IT", position: "Developer", hireDate: "2022-01-15", status: "Active", salary: 60000 },
-         { id: 5, firstName: "Sonny", lastName: "Lipio", email: "lipio@corp.com", department: "Finance", position: "Accountant", hireDate: "2024-06-20", status: "Active", salary: 50000 }
+         { id: 5, firstName: "Sonny", lastName: "Lipio", email: "lipio@corp.com", department: "Finance", position: "Accountant", hireDate: "2024-06-20", status: "Active", salary: 50000 },
+        { id: 6, firstName: "Marites", lastName: "Gimenez", email: "Gimenez@corp.com", department: "Finance", position: "Accountant", hireDate: "2024-07-20", status: "Active", salary: 50000 }
     ];
 
     const storedDepartments = JSON.parse(localStorage.getItem('departments')) || [
@@ -600,5 +601,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
 
 
